@@ -1,6 +1,12 @@
 Projectsunshine::Application.routes.draw do
   resources :users
+  resources :pages
+  
+  root :to => "pages#home"
 
+  unless Rails.application.config.consider_all_requests_local
+    match '*not_found', to: 'errors#404'
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
