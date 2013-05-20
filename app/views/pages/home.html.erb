@@ -1,1 +1,25 @@
-<p>Home</p>
+<table class="home" cellspacing="0" cellpadding="0" cols="2">
+  <tbody>
+    <tr><!--row 1 (flash and intro)-->
+      <td class="flash"><%= render :partial => "layouts/fader" %></td>
+      <td class="intro"><%= render :partial => "layouts/intro" %></td>
+    </tr>          
+    <tr><!--row 2 (ways to give / volunteer intros)-->
+      <td class="ways_to_give"><%= render :partial => "layouts/ways_to_give" %></td>
+      <td class="volunteer_intros"><%= render :partial => "layouts/volunteer_intros" %></td>
+    </tr>
+    <tr><!--row 3 (Featured Header)-->
+      <td class="featured_header" colspan="2">
+        <div id="homenews2">
+          <font class="featured_header_text"> WHAT'S HAPPENING NOW</font>
+        </div>
+      </td>
+    </tr>
+    <tr><!--row 4 (News)-->
+      <td class="news whats_happening_now" colspan="2"><%= render :partial => "layouts/news_whats_happening_now" %></td>
+    </tr>
+    <tr><!--row 3 (Featured Header)-->
+      <td class="news recent_events_and_press"><%= render :partial => "layouts/news_recent_events_and_press" %></td>
+    </tr>
+  </tbody>
+</table>

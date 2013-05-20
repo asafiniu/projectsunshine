@@ -2,5 +2,18 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 he:
+  foot:
+    link:
+      about_us: "about us"
+      programs: "programs"
+      ways_to_give: "ways to give"
+      events: "events"
+      volunteer: "volunteer"
+      news_and_press: "news and press"
+      photos: "photos"
+      shop: "shop"
+      contact_us: "contact us"
+      financial_information: "<a href=\"aboutus/about-contact.php\"><font class=\"grey\">Click here</font></a> for financial information."
+    copyright: "© 2003-2013. All Rights Reserved. Project Sunshine Site Design: <a href=\"mailto:asafiniu@gmail.com\" target=\"_blank\"><font class=\"grey\">Asaf Nachmany</font></a>"
   head:
     title: "Project Sunshine - Bringing Sunshine to a Cloudy Day"

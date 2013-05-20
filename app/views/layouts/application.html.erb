@@ -9,7 +9,12 @@
 	<%= yield(:head) %>
 </head>
 <body>
-	<%= yield %>
+	<div id="header"><%= render :partial => "layouts/header" %></div>
+	<div id="main">
+		<%= render :partial => "layouts/menu" %>
+		<%= yield %>
+	</div>
+	<div id="footer"><%= render :partial => "layouts/footer" %></div>
 	<%= yield(:script) %>
-</body>
-</html>
+	</body>
+	</html>

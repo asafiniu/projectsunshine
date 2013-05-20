@@ -1,7 +1,9 @@
 Projectsunshine::Application.routes.draw do
   resources :users
-  resources :pages
+  # resources :pages
   
+  match "*a" => "pages#home"
+
   root :to => "pages#home"
 
   unless Rails.application.config.consider_all_requests_local
