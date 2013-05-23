@@ -1,7 +1,7 @@
 class ErrorsController < ApplicationController
-	def 404
+	def four_o_four
 	end
 
-	def 500 
+	def five_hundred 
 	end
 end
