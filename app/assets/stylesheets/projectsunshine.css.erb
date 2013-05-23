@@ -1,9 +1,18 @@
+body.centered {
+	width: 760px;
+	margin: 8px auto
+}
+
 .inline {
 	display: inline
 }
 
 font.grey {
 	color: #666666
+}
+
+table.menu * {
+	line-height: 10px;
 }
 
 table.header {
@@ -21,8 +30,76 @@ table.header tr.header_buttons td:not(.logo) {
 	vertical-align: top
 }
 
+table.header tr.header_buttons td.logo a {
+	display: inline-block;
+	height:73px; 
+	width:160px;
+	background: url(<%= asset_path "ps_logo_header.gif" %>);
+	border:0
+}
+
+a.social_icon {
+	background: url(<%= asset_path "social_networks.png" %>) 0 0;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+a.social_icon.facebook {
+	background-position: 0px 0px
+}
+
+a.social_icon.google {
+	background-position: -16px 0px
+}
+
+a.social_icon.twitter {
+	background-position: -64px 0px
+}
+
+a.social_icon.linkedin {
+	background-position: -32px 0px
+}
+
+table.header tr.header_buttons td div#mastheadImages a {
+	margin-top:5px; 
+	border: 0
+}
+
+form.sign_up {
+	font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; 
+	font-size:11px; 
+	font-weight: normal; 
+	margin-bottom:0
+}
+
+form.sign_up font {
+	color:#000000
+}
+
+form.sign_up input.email_hidden {
+	width:135px
+}
+form.sign_up input.email {
+	border:1px solid #999999; 
+	width:135px
+}
+form.sign_up input.submit {
+	font-size:10pt
+}
+
+div#header .header_underline {
+	background-color: #f7a529;
+	height: 16px
+}
+
 div#main, div#footer, div#header {
 	width: 760px
+}
+
+div#footer {
+	/*position:fixed;
+	bottom: 0*/
 }
 
 table.menu {
@@ -35,10 +112,13 @@ table.menu tr td.colored {
 	background-color:#FFF8D4
 }
 
-table.home {
-	width:584px; 
-	border:0;
+div.main_content {
+	width: 584px;
 	float:right
+}
+
+table.home {
+	border:0
 }
 table.home tr td.flash {
 	width:290px; 
@@ -86,4 +166,59 @@ table.home tr td.featured_header font.featured_header_text.lower {
 table.home tr td.news {
 	width:584px; 
 	vertical-align:top
+}
+
+#homenews2 p.news_single {
+	margin-left:15px
+}
+
+#homenews p.news_single.last {
+	margin-bottom: 0
+}
+
+#homenews2 p.news_single a {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	color: rgb(0, 102, 153); 
+	text-decoration: underline; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: normal; 
+	letter-spacing: normal; 
+	line-height: 15.328125px; 
+	orphans: auto; 
+	text-align: start; 
+	text-indent: 0; 
+	text-transform: none; 
+	white-space: normal; 
+	widows: auto; 
+	word-spacing: 0;
+	-webkit-text-size-adjust: auto; 
+	-webkit-text-stroke-width: 0
+}
+
+h6.intro_title {
+	margin-top: 10px; 
+	margin-bottom: 0
+}
+
+div#fader {
+	position: relative
+}
+
+div#fader div.image_holder {
+	width: 290px; 
+	height: 230px;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	display: none; 
+	opacity: 0; 
+	z-index: 6
+}
+
+div#fader div.image_holder.visible {
+	display: block; 
+	z-index: 7; 
+	opacity: 1
 }

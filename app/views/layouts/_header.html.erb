@@ -2,30 +2,28 @@
   <tbody>
     <tr class="header_buttons">
       <td class="logo">
-        <a href="index.php"><img src="images/ps_logo_header.gif" height="73" width="160" border="0" alt="project sunshine logo"></a>
+        <a href="/"></a>
       </td>
       <td>
         <div class="inline" id="mastheadLinks">
           <div class="masthead inline">
-            <a href="index.php">Home</a> | 
-            <a href="aboutus/about-sunshinestaff.php">Our Team</a> | 
-            <a href="aboutus/about-contact.php">Contact Us</a>
+            <a href="/"><%= I18n.t "head.link.home" %></a> | 
+            <a href="/about"><%= I18n.t "head.link.about" %></a> | 
+            <a href="/contact"><%= I18n.t "head.link.contact" %></a>
           </div>
         </div>
         <div class="inline" id="mastheadImages">	
-          <a href="https://www.facebook.com/pages/Project-Sunshine/229070890488535" target="_blank"><img src="images/img_icon_facebook.png" style="margin-top:5px; margin-left:2px;" border="0"></a>
-          <a href="http://twitter.com/#!/projectsunshine" target="_blank"><img src="images/img_icon_twitter.png" style="margin-top:5px; margin-left:2px;" border="0"></a>
-          <a href="http://www.linkedin.com/company/project-sunshine" target="_blank"><img src="images/img_icon_linkedin.png" style="margin-top:5px; margin-left:2px;" border="0"></a>     	
+          <a class="social_icon facebook" href="<%= I18n.t "head.link.facebook" %>" target="_blank"></a>
+          <a class="social_icon twitter" href="<%= I18n.t "head.link.twitter" %>" target="_blank"></a>
+          <a class="social_icon linkedin" href="<%= I18n.t "head.link.linkedin" %>" target="_blank"></a>
         </div>
         <div id="mastheadForm">
-          <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="margin-bottom:0px;">
-            <input type="hidden" name="m" value="1101807378046"><input type="hidden" name="p" value="oi" style="width:135px;"><font style="font-weight: normal; font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:11px; color:#000000;">Sign up for Sunshine News</font> <input type="text" name="ea" value="" style="font-size:11px; border:1px solid #999999; width:135px;">&nbsp;<input type="submit" name="go" value="Go" class="submit" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10pt;">&nbsp;&nbsp;
-          </form>
+          <%= render :partial => "layouts/signup" %>
         </div>
       </td>
     </tr>
     <tr>
-      <td colspan="2" bgcolor="#f7a529" height="16">&nbsp;</td>
+      <td colspan="2" class="header_underline">&nbsp;</td>
     </tr>
   </tbody>
 </table>

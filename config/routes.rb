@@ -1,6 +1,14 @@
 Projectsunshine::Application.routes.draw do
-  resources :users
-  # resources :pages
+  match "/about" => "pages#about"
+  match "/contact" => "pages#contact"
+  match "/events" => "pages#events"
+  match "/home" => "pages#home"
+  match "/gallery" => "pages#photos"
+  match "/news" => "pages#press"
+  match "/programs" => "pages#programs"
+  match "/store" => "pages#shop"
+  match "/volunteer" => "pages#volunteer"
+  match "/ways_to_give" => "pages#ways_to_give"
   
   match "*a" => "pages#home"
 

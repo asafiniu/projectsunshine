@@ -1,0 +1,6 @@
+<font class="featured_header_text lower"> <%= I18n.t "home.title.recent_events_and_press" %></font>                    
+<div id="homenews2">
+  <% @news.each_with_index do |n,i| %>
+    <p class="news_single"<%= " last" if i == (@news.length - 1) %>><%= raw(n.content) %></p>
+  <% end %>
+</div>

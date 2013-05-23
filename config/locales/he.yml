@@ -2,6 +2,24 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 he:
+  head:
+    sign_up:
+      label: "Sign up for Sunshine News"
+    link: 
+      home: "Home"
+      about: "Our team"
+      contact: "Contact us"
+      facebook: "https://www.facebook.com/pages/Project-Sunshine/229070890488535"
+      twitter: "http://twitter.com/#!/projectsunshine"
+      linkedin: "http://www.linkedin.com/company/project-sunshine"
+    title: "Project Sunshine - Bringing Sunshine to a Cloudy Day"
+  home:
+    title: 
+      whats_happening_now: "WHAT'S HAPPENING NOW"
+      recent_events_and_press: "RECENT EVENTS & PRESS"
+      intro: "Bringing sunshine <br>to a cloudy day"
+    intro: 
+      description: "Project Sunshine is a nonprofit organization that provides free educational, recreational, and social programs to children and families living with medical challenges."
   foot:
     link:
       about_us: "about us"
@@ -10,10 +28,9 @@ he:
       events: "events"
       volunteer: "volunteer"
       news_and_press: "news and press"
-      photos: "photos"
+      photos: "gallery"
       shop: "shop"
       contact_us: "contact us"
-      financial_information: "<a href=\"aboutus/about-contact.php\"><font class=\"grey\">Click here</font></a> for financial information."
-    copyright: "© 2003-2013. All Rights Reserved. Project Sunshine Site Design: <a href=\"mailto:asafiniu@gmail.com\" target=\"_blank\"><font class=\"grey\">Asaf Nachmany</font></a>"
-  head:
-    title: "Project Sunshine - Bringing Sunshine to a Cloudy Day"
+      financial_information: "<a href='/contact'><font class='grey'>Click here</font></a> for financial information."
+    copyright: "© 2003-2013. All Rights Reserved. Project Sunshine Site Design: <a href='mailto:asafiniu@gmail.com' target='_blank'><font class='grey'>Asaf Nachmany</font></a>"
+  
